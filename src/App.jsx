@@ -3,7 +3,7 @@ import React from 'react';
 
 const App = () => {
     return <React.Fragment>
-        <h1>Hello master</h1>
+        <h1>Hello create application</h1>
     </React.Fragment>
 }
 
