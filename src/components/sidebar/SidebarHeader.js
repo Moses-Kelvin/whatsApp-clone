@@ -1,14 +1,14 @@
 import React from "react";
 
-import classes from '../../styles/Header.module.css';
+import './SidebarHeader.css';
 
 import { AccountCircle, DonutLarge, MoreHoriz, Add } from "@mui/icons-material";
 
-const Header = () => {
+const SidebarHeader = () => {
     return (
-        <header className={classes.header}>
+        <header className="sidebar_header">
             <div>
-                <AccountCircle sx={{ fontSize: '40px', color: '#bfbfbf' }} />
+                <AccountCircle sx={{ fontSize: '50px', color: '#bfbfbf' }} />
             </div>
             <div>
                 <DonutLarge />
@@ -19,4 +19,4 @@ const Header = () => {
     )
 };
 
-export default Header;
+export default SidebarHeader;

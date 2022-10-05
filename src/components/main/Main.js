@@ -1,18 +1,17 @@
 import React from "react";
 
-import classes from '../../styles/Main.module.css';
+import Chats from "../chats/Chats";
 
-import Header from "../chats/Header";
+import Sidebar from "../sidebar/Sidebar";
 
-import SearchChats from '../chats/Search';
+import  './Main.css';
+ 
 
 const Main = () => {
   return (
-    <main className={classes.main}>
-          <section className={classes.section1}>
-            <Header />
-            <SearchChats />
-          </section>
+    <main className="main">
+          <Sidebar />
+          <Chats />
     </main>
   )
 };

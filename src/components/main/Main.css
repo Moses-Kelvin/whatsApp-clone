@@ -1,4 +1,5 @@
 .main {
+    display: flex;
     background-color: #eeebeb;
     width: 90%;
     height: 38rem;
@@ -7,9 +8,4 @@
     margin-top: 1.5rem;
 }
 
-.section1 {
-    width: 35%;
-    background-color: white;
-    height: 38rem;
-    box-shadow: 0 0 10px rgb(0 0 0 /10%);
-}
+ 

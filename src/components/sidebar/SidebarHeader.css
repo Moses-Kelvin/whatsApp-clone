@@ -1,4 +1,4 @@
-.header {
+.sidebar_header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
@@ -7,14 +7,14 @@
     align-items: center;
 }
 
-.header > div:nth-child(2) {
+.sidebar_header > div:nth-child(2) {
     display: flex;
     gap: 2rem;
     justify-self: end;
     padding-right: 2rem;
 }
 
-.header > div:nth-child(1) {
+.sidebar_header > div:nth-child(1) {
     padding: 1rem;
 }
 

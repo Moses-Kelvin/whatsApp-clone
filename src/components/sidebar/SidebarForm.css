@@ -1,4 +1,4 @@
-.search-container {
+.sidebarForm-container {
     display: flex;
     gap: 0.8rem;
     align-items: center;
@@ -7,7 +7,7 @@
 }
 
 
-.search {
+.sidebarForm {
     display: flex;
     background-color: #eeebeb;
     align-items: center;
@@ -17,6 +17,6 @@
     width: 85%;
 }
 
-.search-container>div:nth-child(2) {
+.sidebarForm-container > div:nth-child(2) {
     justify-self: end;
 }
