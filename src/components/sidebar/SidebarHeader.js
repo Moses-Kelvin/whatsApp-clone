@@ -1,7 +1,5 @@
 import React from "react";
-
 import './SidebarHeader.css';
-
 import { AccountCircle, DonutLarge, MoreHoriz, Add } from "@mui/icons-material";
 
 const SidebarHeader = () => {

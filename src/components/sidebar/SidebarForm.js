@@ -1,9 +1,6 @@
 import React from 'react';
-
 import './SidebarForm.css';
-
 import { Search, FilterList } from '@mui/icons-material';
-
 import { TextField } from '@mui/material';
 
 

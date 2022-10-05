@@ -1,9 +1,6 @@
 import React from "react";
-
 import './Sidebar.css';
-
 import SidebarForm from "./SidebarForm";
-
 import SidebarHeader from "./SidebarHeader";
 
 const Sidebar = () => {
