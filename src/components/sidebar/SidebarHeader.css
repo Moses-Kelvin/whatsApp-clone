@@ -1,0 +1,21 @@
+.sidebar_header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    background-color: #eeebeb;
+    height: 6rem;
+    align-items: center;
+}
+
+.sidebar_header > div:nth-child(2) {
+    display: flex;
+    gap: 2rem;
+    justify-self: end;
+    padding-right: 2rem;
+}
+
+.sidebar_header > div:nth-child(1) {
+    padding: 1rem;
+}
+
+  

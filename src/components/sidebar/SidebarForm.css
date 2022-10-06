@@ -1,0 +1,22 @@
+.sidebarForm-container {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.7rem;
+}
+
+
+.sidebarForm {
+    display: flex;
+    background-color: #eeebeb;
+    align-items: center;
+    padding: 0.3rem 0 0.7rem 0;
+    border-radius: 10px;
+    margin-left: 1rem;
+    width: 85%;
+}
+
+.sidebarForm-container > div:nth-child(2) {
+    justify-self: end;
+}
