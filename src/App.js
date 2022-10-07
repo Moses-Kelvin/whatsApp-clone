@@ -1,11 +1,15 @@
-import React, { Fragment } from 'react';
-import Main from './components/main/Main';
+import React from 'react';
+import ChatBar from "./components/chatBar/ChatBar";
+import Sidebar from "./components/sidebar/Sidebar";
+import './App.css';
+
 
 const App = () => {
     return (
-        <Fragment>
-            <Main />
-        </Fragment>
+        <main className="main">
+            <Sidebar />
+            <ChatBar />
+        </main>
     )
 }
 
