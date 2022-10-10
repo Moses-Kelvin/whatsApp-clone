@@ -4,6 +4,8 @@
     align-items: center;
     width: 100%;
     margin-top: 0.7rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgb(230, 222, 222);
 }
 
 
@@ -17,6 +19,6 @@
     width: 85%;
 }
 
-.sidebarForm-container > div:nth-child(2) {
+.sidebarForm-container>div:nth-child(2) {
     justify-self: end;
 }

@@ -1,0 +1,32 @@
+.chartBar_footer {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: fit-content;
+    height: 4rem;
+}
+
+.chartBar_footer form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.chartBar_footer input {
+    width: 90%;
+    padding: 0.9rem 1rem;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+.chartBar_footer > div:nth-child(3) {
+    margin-left: 1.5rem;
+}
+
+.chartBar_footer > div:nth-child(1) {
+    display: flex;
+    gap: 1rem;
+}
