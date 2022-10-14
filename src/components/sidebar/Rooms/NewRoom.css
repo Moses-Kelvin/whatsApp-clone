@@ -1,0 +1,33 @@
+.new-room {
+    display: flex;
+    gap: 1.5rem;
+    padding-top: 1rem;
+    align-items: center;
+}
+ 
+.new-room_profile {
+    display: grid;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    margin-left: 1rem;
+}
+
+.new-room_profile_details > p {
+    margin: 0;
+    font-size: medium;
+}
+
+.new-room_profile_details > h3 {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.new-room_profile_details {
+    width: 73%;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(223, 211, 211);
+}

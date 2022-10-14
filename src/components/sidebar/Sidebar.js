@@ -1,4 +1,5 @@
 import React from "react";
+import Rooms from "./Rooms/Rooms";
 import './Sidebar.css';
 import SidebarForm from "./SidebarForm";
 import SidebarHeader from "./SidebarHeader";
@@ -8,6 +9,7 @@ const Sidebar = () => {
         <section className="sidebar_section">
             <SidebarHeader />
             <SidebarForm />
+            <Rooms />
         </section>
     )
 };
