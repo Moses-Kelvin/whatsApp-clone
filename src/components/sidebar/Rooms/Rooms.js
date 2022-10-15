@@ -17,13 +17,17 @@ const Rooms = () => {
         setHovering(false)
     }, []);
 
+    const colors = ["Red", "cyan", "yellowgreen", "purple", "orange", "aqua", "yellow"]
+
     const AddRoom = async () => {
         const room_name = prompt("Enter room name");
         console.log(room_name)
         if (room_name !== '' && room_name !== null) {
             try {
+                const color = colors[Math.round(Math.random() * colors.length)];
                 await addDoc(collection(db, 'Rooms'), {
                     roomName: room_name,
+                    color: color,
                     created: Timestamp.now()
                 })
             } catch (err) {
@@ -34,8 +38,8 @@ const Rooms = () => {
 
     useEffect(() => {
         const getRooms = async () => {
-            const rooms = query(collection(db, 'Rooms'), orderBy('created', 'desc'))
-            const roomsSnapshot = await getDocs(rooms)
+            const rooms_col = query(collection(db, 'Rooms'), orderBy('created', 'desc'))
+            const roomsSnapshot = await getDocs(rooms_col)
             setRooms(roomsSnapshot.docs.map(doc => ({
                 id: doc.id,
                 data: doc.data()
@@ -43,7 +47,7 @@ const Rooms = () => {
         }
         getRooms()
 
-    }, []);
+    }, [rooms]);
 
 
     return (
@@ -51,13 +55,14 @@ const Rooms = () => {
             <div className="Rooms_btn">
                 <h1 onClick={AddRoom}>Add new chat</h1>
             </div>
-            <div className={`${'Rooms'} ${hovering && 'scroll'}`}
+            <div className={`Rooms ${hovering && "scroll"}`}
                 onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
                 {rooms.map(room =>
                     <NewRoom
                         id={room.id}
                         key={room.id}
                         roomName={room.data.roomName}
+                        color={room.data.color}
                         createdAt={room.data.created.seconds}
                     />
                 )}

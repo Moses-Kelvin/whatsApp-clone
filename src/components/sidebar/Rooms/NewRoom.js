@@ -1,13 +1,7 @@
-import React, { useMemo } from "react";
+import React from "react";
 import './NewRoom.css';
 
-const NewRoom = ({ createdAt, roomName }) => {
-
-   const color = useMemo(() => {
-        const colors = ['green', 'yellow', 'red', 'cyan', 'yellowgreen', 'purple'];
-        return colors[(Math.floor(Math.random() * colors.length))];
-    }, []);
-
+const NewRoom = ({ createdAt, roomName, color }) => {
 
     const abbreviatedName = roomName.split(" ").map(el => el[0]).join("");
     const day = new Date(createdAt * 1000).getDay();
