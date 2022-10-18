@@ -1,0 +1,46 @@
+.Rooms-container {
+    width: 100%;
+}
+
+.Rooms {
+    width: 100%;
+    overflow-y: scroll;
+    max-height: 22rem;
+}
+
+.Rooms_btn {
+    cursor: pointer;
+    width: 100%;
+    background-color: #dbd4d4;
+    padding: 0.2rem 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}
+
+.Rooms_btn h1 {
+    margin-left: 2rem;
+}
+
+ 
+.Rooms::-webkit-scrollbar {
+    display: none;
+    width: 7px;
+}
+
+.Rooms::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.Rooms::-webkit-scrollbar-thumb {
+    background: rgb(207, 204, 204);
+    border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar  {
+    display: block;
+}
+
+
+ 

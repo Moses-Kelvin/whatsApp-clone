@@ -10,6 +10,7 @@ const SidebarForm = () => {
             <div className="sidebarForm">
                 <Search sx={{ padding: '0 1rem' }} />
                 <TextField id="standard-basic"
+                     sx={{ width: '80%' }}
                     placeholder="Search or start a chat"
                     variant="standard" />
             </div>
