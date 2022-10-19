@@ -1,4 +1,4 @@
-.chartbar_header {
+.chatbar_header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -7,19 +7,19 @@
 }
 
 
-.charbar_icons {
+.chatbar_icons {
     display: flex;
     justify-content: flex-end;
     margin-right: 3rem;
     gap: 1.5rem;
 }
 
-.charbar_icons div:nth-child(1), .charbar_icons div:nth-child(2) {
+.chatbar_icons div:nth-child(1), .chatbar_icons div:nth-child(2) {
     display: flex;
     gap: 2rem; 
 }
 
-.charbar_icons div:nth-child(1) {
+.chatbar_icons div:nth-child(1) {
     border-right: 2px solid black;
     padding-right: 1.5rem;
 }

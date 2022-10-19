@@ -1,8 +1,8 @@
 import React from "react";
-import './ChartBarHeader.css';
+import './ChatBarHeader.css';
 import { AccountCircle, Phone, Videocam, Search, MoreHoriz } from "@mui/icons-material";
 
-const ChartBarHeader = () => {
+const ChatBarHeader = () => {
 
     const customStyle = {
         fontSize: '50px',
@@ -11,9 +11,9 @@ const ChartBarHeader = () => {
     };
 
     return (
-        <header className="chartbar_header">
+        <header className="chatbar_header">
             <AccountCircle sx={customStyle} />
-            <div className="charbar_icons">
+            <div className="chatbar_icons">
                 <div>
                     <Videocam />
                     <Phone />
@@ -27,4 +27,4 @@ const ChartBarHeader = () => {
     )
 };
 
-export default ChartBarHeader;
+export default ChatBarHeader;

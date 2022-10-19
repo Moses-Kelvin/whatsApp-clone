@@ -1,10 +1,10 @@
 import React from "react";
-import './ChartBarFooter.css';
+import './ChatBarFooter.css';
 import { SentimentSatisfied, KeyboardVoice, AttachFile } from '@mui/icons-material';
 
-const ChartBarFooter = () => {
+const ChatBarFooter = () => {
     return (
-        <footer className="chartBar_footer">
+        <footer className="chatBar_footer">
             <div>
                 <SentimentSatisfied />
                 <AttachFile />
@@ -17,4 +17,4 @@ const ChartBarFooter = () => {
     )
 };
 
-export default ChartBarFooter;
+export default ChatBarFooter;

@@ -3,8 +3,6 @@ import ChatBar from "./components/chatBar/ChatBar";
 import Sidebar from "./components/sidebar/Sidebar";
 import './App.css';
 import { useRoutes } from 'react-router-dom';
-import ChartBarBody from './components/chatBar/ChartBarBody';
-
 
 const App = () => {
 
@@ -12,7 +10,7 @@ const App = () => {
         {
             path: '/', element: <ChatBar />,
             children: [
-                { path: 'rooms/:roomId', element: <ChartBarBody /> }
+                { path: 'rooms/:roomId', element: <ChatBar /> }
             ]
         }
     ]);
