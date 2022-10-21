@@ -1,15 +1,15 @@
 import React from "react";
-import ChartBarBody from "./ChartBarBody";
-import ChartBarFooter from "./ChartBarFooter";
-import ChartBarHeader from "./ChartBarHeader";
+import ChatBarBody from "./ChatBarBody";
+import ChatBarFooter from "./ChatBarFooter";
+import ChatBarHeader from "./ChatBarHeader";
 import './ChatBar.css';
 
 const ChatBar = () => {
      return (
         <section className="chatBar_section">
-           <ChartBarHeader />
-           <ChartBarBody />
-           <ChartBarFooter />
+           <ChatBarHeader />
+           <ChatBarBody />
+           <ChatBarFooter />
         </section>
      )
 };

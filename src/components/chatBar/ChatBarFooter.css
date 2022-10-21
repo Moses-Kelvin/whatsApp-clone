@@ -1,4 +1,4 @@
-.chartBar_footer {
+.chatBar_footer {
     display: grid;
     grid-template-columns: 0.4fr 3fr;
     align-items: center;
@@ -8,14 +8,14 @@
     height: 4rem;
 }
 
-.chartBar_footer form {
+.chatBar_footer form {
     display: flex;
     align-items: center;
     gap: 0.8rem;
     width: 100%;
 }
 
-.chartBar_footer input {
+.chatBar_footer input {
     width: 88%;
     padding: 0.9rem 1rem;
     border: 0;
@@ -23,7 +23,7 @@
     border-radius: 5px;
 }
  
-.chartBar_footer > div:nth-child(1) {
+.chatBar_footer > div:nth-child(1) {
     display: flex;
     gap: 1rem;
 }
