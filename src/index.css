@@ -8,3 +8,37 @@ body {
 #root {
     width: 100%;
 }
+
+.scroller {
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.scroller::-webkit-scrollbar {
+    display: none;
+    width: 10px;
+}
+
+.scroller::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+    background: rgb(207, 204, 204);
+    border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar  {
+    display: block;
+}
+
+.scroll {
+    scrollbar-width: thin !important;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .scroller {
+        overflow-y: overlay;
+    }
+} 

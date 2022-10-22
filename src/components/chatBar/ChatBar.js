@@ -5,6 +5,7 @@ import ChatBarHeader from "./ChatBarHeader";
 import './ChatBar.css';
 
 const ChatBar = () => {
+   
      return (
         <section className="chatBar_section">
            <ChatBarHeader />
