@@ -1,21 +1,14 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState } from "react";
 import NewRoom from "./NewRoom";
 import './Rooms.css';
 import { db } from '../../../firebase';
-import { collection, addDoc, query, orderBy, Timestamp, getDocs } from 'firebase/firestore';
+import { collection, addDoc, Timestamp, onSnapshot } from 'firebase/firestore';
+import useScroll from "../../../hooks/use-scroll";
 
 const Rooms = () => {
     const [rooms, setRooms] = useState([]);
 
-    const [hovering, setHovering] = useState(false);
-
-    const handleMouseOver = useCallback(() => {
-        setHovering(true);
-    }, []);
-
-    const handleMouseOut = useCallback(() => {
-        setHovering(false)
-    }, []);
+    const { handleMouseOver, handleMouseOut, hovering } = useScroll();
 
     const colors = ["Red", "cyan", "yellowgreen", "purple", "orange", "aqua", "yellow"]
 
@@ -37,25 +30,21 @@ const Rooms = () => {
     };
 
     useEffect(() => {
-        const getRooms = async () => {
-            const rooms_col = query(collection(db, 'Rooms'), orderBy('created', 'desc'))
-            const roomsSnapshot = await getDocs(rooms_col)
-            setRooms(roomsSnapshot.docs.map(doc => ({
+        const unsuscribed = onSnapshot(collection(db, "Rooms"), (snapShot) => {
+            setRooms(snapShot.docs.map(doc => ({
                 id: doc.id,
                 data: doc.data()
             })))
-        }
-        getRooms()
-
-    }, [rooms]);
-
+        })
+        return unsuscribed;
+    }, [])
 
     return (
         <section className="Rooms-container">
             <div className="Rooms_btn">
                 <h1 onClick={AddRoom}>Add new chat</h1>
             </div>
-            <div className={`Rooms ${hovering && "scroll"}`}
+            <div className={`Rooms scroller ${hovering && "scroll"}`}
                 onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
                 {rooms.map(room =>
                     <NewRoom

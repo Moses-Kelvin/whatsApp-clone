@@ -4,7 +4,6 @@
 
 .Rooms {
     width: 100%;
-    overflow-y: scroll;
     max-height: 22rem;
 }
 
@@ -23,24 +22,6 @@
 }
 
  
-.Rooms::-webkit-scrollbar {
-    display: none;
-    width: 7px;
-}
-
-.Rooms::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
-}
-
-.Rooms::-webkit-scrollbar-thumb {
-    background: rgb(207, 204, 204);
-    border-radius: 10px;
-}
-
-.scroll::-webkit-scrollbar  {
-    display: block;
-}
 
 
  

@@ -1,0 +1,8 @@
+.chatHome {
+    width: 65%;
+    height: 38rem;
+    background-image: url(../../assets/images/ChatHome-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
